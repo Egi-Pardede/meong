@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import Forum from "./pages/Forum.tsx";
 import Pengumuman from "./pages/Pengumuman.tsx";
 import Donasi from "./pages/Donasi.tsx";
+import Adopt from "./pages/Adopt.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/forum" element={<Forum />} />
           <Route path="/pengumuman" element={<Pengumuman />} />
           <Route path="/donasi" element={<Donasi />} />
+          <Route path="/adopt" element={<Adopt />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
