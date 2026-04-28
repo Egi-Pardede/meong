@@ -72,7 +72,7 @@ const tickerItems = [
   "🐱 Feeding aktif di 12 titik",
   "💰 Donasi April tercapai 120%",
   "🌍 SDGs 17 — Partnership for the Goals",
-  "🏥 MoU KDHMB — Vaksinasi Gratis",
+  "🏥 Pemantauan Kesehatan Kucing Rutin",
   "📍 Area baru: Sukabirus & Sukapura",
   "❤️ 120+ kucing terlayani bulan ini",
   "🤝 34 relawan aktif bergabung",
@@ -88,9 +88,9 @@ const beritaItems = [
   },
   {
     date: "18 APR 2026",
-    tag: "Kolaborasi",
-    title: "MoU dengan Komunitas Dokter Hewan Muda Bandung",
-    desc: "MEONG Project resmi menandatangani MoU dengan KDHMB untuk program vaksinasi dan sterilisasi gratis bagi kucing jalanan.",
+    tag: "Edukasi",
+    title: "Panduan Nutrisi & Kesehatan Kucing Jalanan Versi Baru Dirilis",
+    desc: "MEONG Project merilis panduan edukasi terbaru seputar nutrisi optimal, tanda-tanda kucing sakit, dan cara penanganan dasar di lapangan.",
   },
   {
     date: "10 APR 2026",
@@ -342,7 +342,7 @@ const Index = () => {
                 { icon: Cat, val: "120+", label: "Kucing terlayani", detail: "di 5 area Bandung Selatan" },
                 { icon: Users, val: "38", label: "Relawan aktif", detail: "dari berbagai komunitas" },
                 { icon: Heart, val: "Rp 6jt+", label: "Dana terkumpul", detail: "Apr 2026 — 120% target" },
-                { icon: Globe, val: "3", label: "Mitra institusi", detail: "Kampus, KDHMB, komunitas" },
+                { icon: Globe, val: "2", label: "Mitra institusi", detail: "Kampus & komunitas lokal" },
                 { icon: Shield, val: "5", label: "Kucing diadopsi", detail: "Program Open Adopt" },
                 { icon: TrendingUp, val: "98kg", label: "Pakan distribusi", detail: "Maret 2026" },
               ].map((item, i) => (
@@ -461,8 +461,8 @@ const Index = () => {
                 },
                 {
                   num: "04",
-                  title: "Program Vaksinasi",
-                  desc: "Kolaborasi dengan KDHMB untuk vaksinasi & sterilisasi gratis bagi kucing di titik feeding. Mei–Juli 2026.",
+                  title: "Pemantauan Kesehatan",
+                  desc: "Monitoring kondisi kesehatan kucing di setiap titik feeding secara berkala. Kucing yang teridentifikasi sakit dicatat dan dirujuk ke dokter hewan terdekat.",
                 },
               ].map((p) => (
                 <div key={p.num} className="flex gap-6 group">

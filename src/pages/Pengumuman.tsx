@@ -38,9 +38,9 @@ const announcements: Announcement[] = [
   },
   {
     date: "15 APR 2026",
-    title: "MoU Kolaborasi dengan Komunitas Dokter Hewan Muda Bandung",
+    title: "Rilis Panduan Edukasi Nutrisi & Kesehatan Kucing Jalanan",
     content:
-      "MEONG Project resmi menandatangani MoU dengan Komunitas Dokter Hewan Muda Bandung (KDHMB). Program kolaborasi meliputi: vaksinasi gratis (rabies & flu), sterilisasi bersubsidi, konsultasi kesehatan untuk kucing titik feeding, serta edukasi masyarakat. Jadwal pelaksanaan: Mei–Juli 2026.",
+      "MEONG Project merilis panduan edukasi terbaru yang dapat diakses oleh seluruh relawan dan masyarakat umum. Panduan mencakup: jenis pakan yang aman dan bergizi, porsi dan frekuensi pemberian makan, tanda-tanda kucing sakit yang perlu diwaspadai, serta langkah penanganan dasar sebelum dirujuk ke dokter hewan. Panduan dapat diakses melalui halaman Forum.",
     priority: "info",
   },
   {
