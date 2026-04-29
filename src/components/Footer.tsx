@@ -48,7 +48,6 @@ const Footer = () => {
             <ul className="space-y-3 text-xs text-muted-foreground">
               <li className="flex gap-2"><span className="font-bold text-accent">17</span> Partnership</li>
               <li className="flex gap-2"><span className="font-bold text-accent">9</span> Innovation</li>
-              <li className="flex gap-2"><span className="font-bold text-accent">13</span> Climate Action</li>
             </ul>
           </div>
         </div>

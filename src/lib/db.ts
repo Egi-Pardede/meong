@@ -131,13 +131,31 @@ const seedPosts: ForumPost[] = [
 ];
 
 const seedDonations: Donation[] = [
-  { id: "d1", name: "Fabert V.", amount: 100000, message: "Semangat terus!", created_at: "2026-04-01T08:00:00Z" },
-  { id: "d2", name: "Anonim", amount: 50000, message: "", created_at: "2026-04-05T14:30:00Z" },
-  { id: "d3", name: "Siti Rahayu", amount: 250000, message: "Untuk kucing-kucing di kampus timur", created_at: "2026-04-10T09:00:00Z" },
-  { id: "d4", name: "Anonim", amount: 25000, message: "", created_at: "2026-04-15T18:00:00Z" },
-  { id: "d5", name: "Komunitas Pet Lover Kota", amount: 500000, message: "Kolaborasi untuk SDGs 17", created_at: "2026-04-20T10:00:00Z" },
-  { id: "d6", name: "Anonim", amount: 75000, message: "Semoga bisa membantu", created_at: "2026-04-23T12:00:00Z" },
-  { id: "d7", name: "Ferdi S.", amount: 150000, message: "Tetap semangat tim MEONG!", created_at: "2026-04-25T16:00:00Z" },
+  { id: "d1",  name: "Fabert V.",             amount: 100000,  message: "Semangat terus!",                         created_at: "2026-04-01T08:00:00Z" },
+  { id: "d2",  name: "Anonim",                amount: 50000,   message: "",                                         created_at: "2026-04-02T14:30:00Z" },
+  { id: "d3",  name: "Siti Rahayu",           amount: 250000,  message: "Untuk kucing-kucing di kampus timur",      created_at: "2026-04-03T09:00:00Z" },
+  { id: "d4",  name: "Anonim",                amount: 25000,   message: "",                                         created_at: "2026-04-04T18:00:00Z" },
+  { id: "d5",  name: "Komunitas Pet Lover",   amount: 500000,  message: "Kolaborasi untuk SDGs 17",                created_at: "2026-04-05T10:00:00Z" },
+  { id: "d6",  name: "Anonim",                amount: 75000,   message: "Semoga bisa membantu",                    created_at: "2026-04-06T12:00:00Z" },
+  { id: "d7",  name: "Ferdi S.",              amount: 150000,  message: "Tetap semangat tim MEONG!",               created_at: "2026-04-07T16:00:00Z" },
+  { id: "d8",  name: "Anonim",                amount: 200000,  message: "",                                         created_at: "2026-04-08T11:00:00Z" },
+  { id: "d9",  name: "Dewi Lestari",          amount: 300000,  message: "Kasihan kucing-kucingnya, semangat!",     created_at: "2026-04-09T13:00:00Z" },
+  { id: "d10", name: "Anonim",                amount: 100000,  message: "",                                         created_at: "2026-04-10T07:30:00Z" },
+  { id: "d11", name: "Reza Firmansyah",       amount: 500000,  message: "Dukung penuh program MEONG!",             created_at: "2026-04-11T15:00:00Z" },
+  { id: "d12", name: "Anonim",                amount: 50000,   message: "Sedikit tapi semoga bermanfaat",          created_at: "2026-04-12T09:00:00Z" },
+  { id: "d13", name: "Mahasiswa TU Batch 22", amount: 750000,  message: "Patungan dari teman-teman angkatan",      created_at: "2026-04-13T16:30:00Z" },
+  { id: "d14", name: "Anonim",                amount: 100000,  message: "",                                         created_at: "2026-04-14T10:00:00Z" },
+  { id: "d15", name: "Hendra Wijaya",         amount: 250000,  message: "Untuk pakan bulan ini",                   created_at: "2026-04-15T14:00:00Z" },
+  { id: "d16", name: "Anonim",                amount: 75000,   message: "",                                         created_at: "2026-04-16T08:00:00Z" },
+  { id: "d17", name: "Nadia Putri",           amount: 200000,  message: "Sukses terus!",                           created_at: "2026-04-17T11:00:00Z" },
+  { id: "d18", name: "Anonim",                amount: 150000,  message: "",                                         created_at: "2026-04-18T17:00:00Z" },
+  { id: "d19", name: "Alumni TU Peduli",      amount: 1000000, message: "Dari alumni, semoga bisa membantu lebih", created_at: "2026-04-19T09:00:00Z" },
+  { id: "d20", name: "Anonim",                amount: 100000,  message: "",                                         created_at: "2026-04-20T13:00:00Z" },
+  { id: "d21", name: "Toko Petshop Bandung",  amount: 500000,  message: "Dukungan dari komunitas pecinta hewan",   created_at: "2026-04-21T10:00:00Z" },
+  { id: "d22", name: "Anonim",                amount: 50000,   message: "Sedikit semoga berarti",                  created_at: "2026-04-22T15:30:00Z" },
+  { id: "d23", name: "Rizky Aditya",          amount: 200000,  message: "Tetap konsisten ya!",                     created_at: "2026-04-23T12:00:00Z" },
+  { id: "d24", name: "Anonim",                amount: 100000,  message: "",                                         created_at: "2026-04-24T08:30:00Z" },
+  { id: "d25", name: "Maya & Keluarga",       amount: 300000,  message: "Anak-anak di rumah suka kucing",          created_at: "2026-04-25T16:00:00Z" },
 ];
 
 const seedAdoptions: AdoptListing[] = [
@@ -255,7 +273,7 @@ export async function createReply(data: Omit<ForumReply, "id" | "created_at">): 
 
 // ─── DONATIONS ────────────────────────────────────────────────────────────────
 
-const SEED_VERSION = "v3"; // bump this whenever seed data changes
+const SEED_VERSION = "v4"; // bump this whenever seed data changes
 
 function initDonationStore() {
   const versionKey = "meong_donations_ver";
