@@ -205,7 +205,7 @@ const Index = () => {
               <br />
               STATUS: FEEDING AKTIF
               <br />
-              SDGs: 17 / 9 / 13
+              SDGs: 17 / 9
             </p>
           </div>
           <div className="absolute top-6 left-6 bg-accent text-accent-foreground px-3 py-1.5 editorial-shadow">
@@ -272,7 +272,7 @@ const Index = () => {
             </span>
             <h2 className="text-4xl font-bold uppercase tracking-tighter">Keterkaitan dengan SDGs</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
               {
                 code: "SDG 17 — Fokus Utama",
@@ -285,12 +285,6 @@ const Index = () => {
                 title: "Innovation & Infrastructure",
                 desc: "Platform digital untuk edukasi, koordinasi feeding, dan pengelolaan data kucing jalanan berbasis teknologi.",
                 icon: TrendingUp,
-              },
-              {
-                code: "SDG 13",
-                title: "Climate Action",
-                desc: "Pengurangan food waste melalui distribusi pakan terorganisir dan edukasi pola konsumsi bertanggung jawab.",
-                icon: Shield,
               },
             ].map((s, i) => (
               <div key={i} className="border-t border-secondary-foreground/30 pt-6 group">
