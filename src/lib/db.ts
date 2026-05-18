@@ -3,6 +3,14 @@
  * Uses Supabase when configured, falls back to localStorage for demo.
  */
 import { supabase, isSupabaseConfigured } from "./supabase";
+import kucing1Img from "../assets/kucing1.jpg";
+import kucing2Img from "../assets/kucing2.jpg";
+import kucing3Img from "../assets/kucing3.jpg";
+import kucing4Img from "../assets/kucing4.jpg";
+import kucing5Img from "../assets/kucing5.jpg";
+import kucing6Img from "../assets/kucing6.jpg";
+import kucing7Img from "../assets/kucing7.jpg";
+import kucing8Img from "../assets/kucing8.jpg";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -158,49 +166,95 @@ const seedDonations: Donation[] = [
   { id: "d25", name: "Maya & Keluarga",       amount: 300000,  message: "Anak-anak di rumah suka kucing",          created_at: "2026-04-25T16:00:00Z" },
 ];
 
+const ADOPT_SEED_VERSION = "v2";
+
 const seedAdoptions: AdoptListing[] = [
   {
     id: "a1",
-    cat_name: "Kopi",
-    description: "Kucing jantan, usia ±1 tahun, warna coklat tabby. Jinak dan suka bermain. Pemilik harus pindah ke luar kota.",
-    location: "Bandung, Jawa Barat",
-    contact_name: "Rina Putri",
-    contact_phone: "081234567890",
-    image_url: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
-    created_at: "2026-04-20T08:00:00Z",
+    cat_name: "Midnight",
+    description: "Kucing jantan berbulu panjang warna hitam pekat dengan mata kuning-hijau. Usia ±2 tahun. Ditemukan di area rektorat Telkom University. Meski tampak serius, ia sebenarnya manja dan suka duduk di pangkuan jika sudah percaya.",
+    location: "Telkom University, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing1Img,
+    created_at: "2026-05-13T08:00:00Z",
     status: "available",
   },
   {
     id: "a2",
-    cat_name: "Luna",
-    description: "Kucing betina, usia ±2 tahun, warna putih dengan bercak orange. Sudah steril. Sehat dan ramah dengan anak-anak.",
-    location: "Bandung, Jawa Barat",
-    contact_name: "Deni Kusuma",
-    contact_phone: "082345678901",
-    image_url: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400&h=300&fit=crop",
-    created_at: "2026-04-18T10:00:00Z",
+    cat_name: "Bonny",
+    description: "Kucing betina tabby coklat-oranye bergaris dengan mata hijau cerah. Usia ±1.5 tahun. Ditemukan di area kampus, suka berbaring santai dan jinak terhadap manusia. Cocok untuk keluarga yang baru pertama kali memelihara kucing.",
+    location: "Telkom University, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing2Img,
+    created_at: "2026-05-13T08:10:00Z",
     status: "available",
   },
   {
     id: "a3",
-    cat_name: "Abu",
-    description: "Kucing jantan, usia ±3 tahun, warna abu-abu. Tenang dan cocok untuk apartemen. Sudah divaksin.",
-    location: "Cimahi, Jawa Barat",
-    contact_name: "Maya Sari",
-    contact_phone: "083456789012",
-    image_url: "https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f4?w=400&h=300&fit=crop",
-    created_at: "2026-04-15T14:00:00Z",
+    cat_name: "Ciko",
+    description: "Kucing jantan abu-abu putih bergaris, bertubuh gemuk dan sehat. Usia ±2 tahun. Rajin datang ke titik feeding Ciganitri dan sangat tidak takut manusia. Aktif dan suka bermain bola.",
+    location: "Ciganitri, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing3Img,
+    created_at: "2026-05-13T08:20:00Z",
     status: "available",
   },
   {
     id: "a4",
-    cat_name: "Mochi",
-    description: "Kucing betina, usia ±8 bulan, warna hitam putih (tuxedo). Aktif dan playful. Pemilik tidak sanggup merawat karena kondisi ekonomi.",
-    location: "Bandung, Jawa Barat",
-    contact_name: "Hasan Basri",
-    contact_phone: "084567890123",
-    image_url: "https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?w=400&h=300&fit=crop",
-    created_at: "2026-04-22T09:00:00Z",
+    cat_name: "Kopi",
+    description: "Kucing jantan warna coklat keabu-abuan. Usia ±3 tahun. Ditemukan di area parkiran kampus saat feeding rutin. Sudah mulai jinak dengan relawan dan tidak agresif. Cocok untuk pemilik yang sabar dan berpengalaman.",
+    location: "Sukapura, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing4Img,
+    created_at: "2026-05-13T08:30:00Z",
+    status: "available",
+  },
+  {
+    id: "a5",
+    cat_name: "Jeruk",
+    description: "Kucing jantan berbulu semi-panjang warna oranye cream dengan ekor lebat yang indah. Usia ±1 tahun. Ditemukan di area PGA. Sangat lincah, aktif, dan suka bermain. Akan membawa keceriaan di rumah Anda.",
+    location: "PGA, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing5Img,
+    created_at: "2026-05-13T08:40:00Z",
+    status: "available",
+  },
+  {
+    id: "a6",
+    cat_name: "Dino",
+    description: "Kucing jantan hitam putih (tuxedo) yang sehat dan berani. Usia ±2 tahun. Ditemukan di taman Telkom University. Mudah didekati, tidak takut manusia, dan sudah terbiasa hidup di dekat keramaian. Sangat ideal untuk adopsi pertama.",
+    location: "Telkom University, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing6Img,
+    created_at: "2026-05-13T08:50:00Z",
+    status: "available",
+  },
+  {
+    id: "a7",
+    cat_name: "Salju",
+    description: "Kucing betina putih bersih bermata biru, masih muda usia ±8 bulan. Ditemukan di area taman kampus saat feeding pagi. Sangat jinak, suka diajak bermain, dan penampilannya selalu menarik perhatian. Butuh rumah yang penuh kasih sayang.",
+    location: "Telkom University, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing7Img,
+    created_at: "2026-05-13T09:00:00Z",
+    status: "available",
+  },
+  {
+    id: "a8",
+    cat_name: "Bule",
+    description: "Kucing jantan abu-abu putih bicolor. Usia ±1.5 tahun. Ditemukan di koridor kampus area Sukabirus saat feeding sore. Tenang, tidak agresif, dan sudah terbiasa dengan kehadiran manusia. Cocok tinggal di apartemen maupun rumah.",
+    location: "Sukabirus, Bandung",
+    contact_name: "Tim MEONG Project",
+    contact_phone: "082285250331",
+    image_url: kucing8Img,
+    created_at: "2026-05-13T09:10:00Z",
     status: "available",
   },
 ];
@@ -324,6 +378,15 @@ export function getProofImage(donationId: string): string | null {
 
 // ─── ADOPTIONS ────────────────────────────────────────────────────────────────
 
+function initAdoptionStore() {
+  const versionKey = "meong_adoptions_ver";
+  if (localStorage.getItem(versionKey) !== ADOPT_SEED_VERSION) {
+    localStorage.removeItem("meong_adoptions");
+    localStorage.setItem(versionKey, ADOPT_SEED_VERSION);
+  }
+  if (!localStorage.getItem("meong_adoptions")) setLS("meong_adoptions", seedAdoptions);
+}
+
 export async function getAdoptions(): Promise<AdoptListing[]> {
   if (isSupabaseConfigured && supabase) {
     const { data } = await supabase
@@ -333,7 +396,7 @@ export async function getAdoptions(): Promise<AdoptListing[]> {
       .order("created_at", { ascending: false });
     return data || [];
   }
-  if (!localStorage.getItem("meong_adoptions")) setLS("meong_adoptions", seedAdoptions);
+  initAdoptionStore();
   return getLS<AdoptListing[]>("meong_adoptions", seedAdoptions).filter((a) => a.status === "available");
 }
 
@@ -342,8 +405,9 @@ export async function createAdoption(data: Omit<AdoptListing, "id" | "created_at
   if (isSupabaseConfigured && supabase) {
     await supabase.from("adopt_listings").insert(listing);
     return listing;
+
   }
-  if (!localStorage.getItem("meong_adoptions")) setLS("meong_adoptions", seedAdoptions);
+  initAdoptionStore();
   const list = getLS<AdoptListing[]>("meong_adoptions", seedAdoptions);
   setLS("meong_adoptions", [listing, ...list]);
   return listing;

@@ -14,6 +14,14 @@ interface Announcement {
 
 const announcements: Announcement[] = [
   {
+    date: "13 MEI 2026",
+    title: "Laporan Feeding 13 Mei 2026 — Berjalan Lancar di 5 Titik",
+    content:
+      "Kegiatan feeding rutin hari ini, Selasa 13 Mei 2026, telah berhasil dilaksanakan di seluruh titik aktif. Relawan hadir tepat waktu di semua sektor. Total kucing yang terlayani hari ini mencapai 72 ekor. Kondisi kucing di semua titik terpantau sehat. Terima kasih kepada seluruh relawan yang hadir dan para donatur yang membuat kegiatan ini terus bisa berjalan!",
+    priority: "urgent",
+    location: "Semua Sektor",
+  },
+  {
     date: "28 APR 2026",
     title: "Jadwal Feeding Minggu Ini — 28 Apr s.d. 2 Mei 2026",
     content:

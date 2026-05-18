@@ -3,6 +3,10 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import heroCats from "@/assets/hero-cats.jpg";
+import kucing1Img from "@/assets/kucing1.jpg";
+import kucing5Img from "@/assets/kucing5.jpg";
+import kucing7Img from "@/assets/kucing7.jpg";
+import kucing6Img from "@/assets/kucing6.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   BookOpen,
@@ -87,10 +91,10 @@ const beritaItems = [
     desc: "Tim MEONG Project menggelar feeding massal pada 22 April 2026 di 5 titik serentak dengan total 120 ekor kucing terlayani.",
   },
   {
-    date: "18 APR 2026",
-    tag: "Edukasi",
-    title: "Panduan Nutrisi & Kesehatan Kucing Jalanan Versi Baru Dirilis",
-    desc: "MEONG Project merilis panduan edukasi terbaru seputar nutrisi optimal, tanda-tanda kucing sakit, dan cara penanganan dasar di lapangan.",
+    date: "13 MEI 2026",
+    tag: "Laporan",
+    title: "Feeding 13 Mei — 72 Kucing Terlayani di 5 Titik Serentak",
+    desc: "Kegiatan feeding hari ini berjalan lancar. Seluruh relawan hadir tepat waktu dan semua titik aktif terlayani dengan baik.",
   },
   {
     date: "10 APR 2026",
@@ -737,26 +741,10 @@ const Index = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {[
-              {
-                name: "Kopi",
-                location: "Bandung",
-                img: "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&h=200&fit=crop",
-              },
-              {
-                name: "Luna",
-                location: "Bandung",
-                img: "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=300&h=200&fit=crop",
-              },
-              {
-                name: "Abu",
-                location: "Cimahi",
-                img: "https://images.unsplash.com/photo-1557246565-8a3d3ab5d7f4?w=300&h=200&fit=crop",
-              },
-              {
-                name: "Mochi",
-                location: "Bandung",
-                img: "https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?w=300&h=200&fit=crop",
-              },
+              { name: "Midnight", location: "Telkom University", img: kucing1Img },
+              { name: "Jeruk",    location: "PGA, Bandung",       img: kucing5Img },
+              { name: "Salju",    location: "Telkom University",  img: kucing7Img },
+              { name: "Dino",     location: "Telkom University",  img: kucing6Img },
             ].map((cat, i) => (
               <Link
                 key={i}
