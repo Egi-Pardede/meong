@@ -2,8 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect, useRef } from "react";
-import { getDonations, recordDonation, saveProofImage, getProofImage, type Donation } from "@/lib/db";
-import { CheckCircle, Copy, ChevronDown, Upload, ImageIcon, X, ShieldCheck, Eye } from "lucide-react";
+import { getDonations, recordDonation, saveProofImage, type Donation } from "@/lib/db";
+import { CheckCircle, Copy, ChevronDown, Upload, ImageIcon, X, ShieldCheck } from "lucide-react";
 
 const donationAmounts = [
   { value: 25000, label: "Rp 25.000", desc: "Pakan 1 hari / 5 kucing" },
@@ -40,9 +40,6 @@ const Donasi = () => {
   const [submitting, setSubmitting] = useState(false);
   const [copied, setCopied] = useState(false);
   const [showAll, setShowAll] = useState(false);
-
-  // Proof viewer modal
-  const [viewingProof, setViewingProof] = useState<{ name: string; src: string } | null>(null);
 
   // Proof of payment
   const [proofFile, setProofFile] = useState<File | null>(null);
@@ -614,11 +611,11 @@ const Donasi = () => {
               <table className="w-full text-sm">
                 <thead>
                   <tr className="border-b-2 border-foreground bg-muted/30">
-                    {["Tanggal", "Nama", "Nominal", "Bukti", "Pesan"].map((h) => (
+                    {["Tanggal", "Nama", "Nominal", "Pesan"].map((h) => (
                       <th
                         key={h}
                         className={`text-left p-4 font-mono text-[10px] uppercase tracking-widest text-muted-foreground ${
-                          h === "Pesan" || h === "Bukti" ? "hidden md:table-cell" : ""
+                          h === "Pesan" ? "hidden md:table-cell" : ""
                         }`}
                       >
                         {h}
@@ -646,28 +643,6 @@ const Donasi = () => {
                         )}
                       </td>
                       <td className="p-4 font-bold text-accent">{formatRp(d.amount)}</td>
-                      <td className="p-4 hidden md:table-cell">
-                        {d.proof_uploaded ? (
-                          <span
-                            onClick={() => {
-                              const src = getProofImage(d.id);
-                              if (src) {
-                                setViewingProof({ name: d.name, src });
-                              } else {
-                                alert("Bukti tidak ditemukan di perangkat ini.\n\nBukti hanya tersimpan di browser yang digunakan saat donasi.");
-                              }
-                            }}
-                            title="Klik untuk lihat bukti (admin)"
-                            className="flex items-center gap-1 text-[10px] font-bold text-accent cursor-pointer hover:underline select-none"
-                          >
-                            <ShieldCheck size={11} />
-                            ✓ Bukti Ada
-                            <Eye size={9} />
-                          </span>
-                        ) : (
-                          <span className="text-[10px] text-muted-foreground/30">—</span>
-                        )}
-                      </td>
                       <td className="p-4 text-muted-foreground text-xs hidden md:table-cell italic">
                         {d.message || "—"}
                       </td>
@@ -696,47 +671,6 @@ const Donasi = () => {
 
       <Footer />
 
-      {/* ── Proof Viewer Modal ── */}
-      {viewingProof && (
-        <div
-          className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4"
-          onClick={() => setViewingProof(null)}
-        >
-          <div
-            className="bg-background border-2 border-foreground w-full max-w-lg max-h-[90vh] overflow-y-auto editorial-shadow"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="flex items-center justify-between p-4 border-b-2 border-foreground">
-              <div>
-                <p className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                  [ Bukti Transfer ]
-                </p>
-                <p className="font-bold uppercase text-sm mt-0.5">{viewingProof.name}</p>
-              </div>
-              <button
-                onClick={() => setViewingProof(null)}
-                className="p-1.5 hover:text-accent transition-colors border border-foreground/20 hover:border-accent"
-              >
-                <X size={16} />
-              </button>
-            </div>
-            <div className="p-4">
-              <img
-                src={viewingProof.src}
-                alt="Bukti transfer"
-                className="w-full object-contain border border-foreground/20"
-              />
-              <div className="mt-4 flex items-center gap-2 bg-accent/10 border border-accent/30 p-3 text-xs">
-                <ShieldCheck size={14} className="text-accent shrink-0" />
-                <p className="text-muted-foreground">
-                  Bukti transfer dari donatur <span className="font-bold">{viewingProof.name}</span>.
-                  Verifikasi manual dengan cek mutasi rekening.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

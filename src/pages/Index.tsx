@@ -74,7 +74,7 @@ function AnimatedStat({ val, label, suffix = "" }: { val: number; label: string;
 // ─── Ticker marquee data ──────────────────────────────────────────────────────
 const tickerItems = [
   "🐱 Feeding aktif di 12 titik",
-  "💰 Donasi April tercapai 120%",
+  "💰 Total donasi terkumpul Rp 317.000",
   "🌍 SDGs 17 — Partnership for the Goals",
   "🏥 Pemantauan Kesehatan Kucing Rutin",
   "📍 Area baru: Sukabirus & Sukapura",
@@ -339,7 +339,7 @@ const Index = () => {
               {[
                 { icon: Cat, val: "120+", label: "Kucing terlayani", detail: "di 5 area Bandung Selatan" },
                 { icon: Users, val: "38", label: "Relawan aktif", detail: "dari berbagai komunitas" },
-                { icon: Heart, val: "Rp 6jt+", label: "Dana terkumpul", detail: "Apr 2026 — 120% target" },
+                { icon: Heart, val: "Rp 317rb", label: "Dana terkumpul", detail: "Apr–Mei 2026" },
                 { icon: Globe, val: "2", label: "Mitra institusi", detail: "Kampus & komunitas lokal" },
                 { icon: Shield, val: "5", label: "Kucing diadopsi", detail: "Program Open Adopt" },
                 { icon: TrendingUp, val: "98kg", label: "Pakan distribusi", detail: "Maret 2026" },
@@ -484,7 +484,7 @@ const Index = () => {
                 { val: "120+", label: "Kucing terlayani" },
                 { val: "12", label: "Titik feeding aktif" },
                 { val: "38", label: "Relawan bergabung" },
-                { val: "Rp 6jt+", label: "Dana terkumpul" },
+                { val: "Rp 317rb", label: "Dana terkumpul" },
               ].map((stat) => (
                 <div
                   key={stat.label}
