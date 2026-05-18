@@ -73,34 +73,34 @@ function AnimatedStat({ val, label, suffix = "" }: { val: number; label: string;
 
 // ─── Ticker marquee data ──────────────────────────────────────────────────────
 const tickerItems = [
-  "🐱 Feeding aktif di 12 titik",
+  "🐱 Feeding aktif di 9 sektor — Mei 2026",
   "💰 Total donasi terkumpul Rp 317.000",
   "🌍 SDGs 17 — Partnership for the Goals",
-  "🏥 Pemantauan Kesehatan Kucing Rutin",
-  "📍 Area baru: Sukabirus & Sukapura",
-  "❤️ 120+ kucing terlayani bulan ini",
-  "🤝 34 relawan aktif bergabung",
-  "📦 38kg pakan terdistribusi",
+  "🏥 Pemantauan kesehatan kucing rutin setiap feeding",
+  "✅ Semua sektor kini ditangani MeongSquad",
+  "❤️ 68 kucing terlayani pada feeding 18 Mei",
+  "🤝 14 donatur telah berkontribusi",
+  "📦 Pakan terdistribusi rutin setiap hari",
 ];
 
 const beritaItems = [
   {
-    date: "25 APR 2026",
-    tag: "Kegiatan",
-    title: "Feeding Massal Peringatan Hari Bumi di 5 Titik Serentak",
-    desc: "Tim MEONG Project menggelar feeding massal pada 22 April 2026 di 5 titik serentak dengan total 120 ekor kucing terlayani.",
+    date: "18 MEI 2026",
+    tag: "Laporan",
+    title: "Feeding 18 Mei — 68 Kucing Terlayani, Semua Sektor Aktif",
+    desc: "Feeding rutin 18 Mei 2026 berjalan lancar. Tim MeongSquad hadir lengkap dan ±8kg pakan terdistribusi ke seluruh 9 sektor.",
   },
   {
     date: "13 MEI 2026",
     tag: "Laporan",
-    title: "Feeding 13 Mei — 72 Kucing Terlayani di 5 Titik Serentak",
-    desc: "Kegiatan feeding hari ini berjalan lancar. Seluruh relawan hadir tepat waktu dan semua titik aktif terlayani dengan baik.",
+    title: "Feeding 13 Mei — 72 Kucing Terlayani di Semua Titik",
+    desc: "Kegiatan feeding berjalan lancar. Seluruh relawan hadir tepat waktu dan semua titik aktif terlayani dengan baik.",
   },
   {
-    date: "10 APR 2026",
-    tag: "Donasi",
-    title: "Target Donasi April Tercapai 120% dalam 10 Hari",
-    desc: "Berkat dukungan komunitas, target donasi bulan April sebesar Rp 5.000.000 berhasil terlampaui hanya dalam 10 hari pertama.",
+    date: "20 APR 2026",
+    tag: "Relawan",
+    title: "Pembukaan Relawan Batch 3 — Pendaftaran Dibuka",
+    desc: "MEONG Project membuka kuota 20 relawan baru. Bergabunglah dan bantu kami merawat kucing jalanan di Bandung Selatan.",
   },
 ];
 
@@ -185,9 +185,9 @@ const Index = () => {
               </Button>
             </div>
             <div className="grid grid-cols-3 gap-3">
-              <AnimatedStat val={120} label="Kucing Terlayani" suffix="+" />
-              <AnimatedStat val={12} label="Titik Feeding" />
-              <AnimatedStat val={234} label="Donatur" suffix="+" />
+              <AnimatedStat val={72} label="Kucing Terlayani" suffix="+" />
+              <AnimatedStat val={9} label="Sektor Aktif" />
+              <AnimatedStat val={14} label="Donatur" />
             </div>
           </div>
         </div>
@@ -213,7 +213,7 @@ const Index = () => {
             </p>
           </div>
           <div className="absolute top-6 left-6 bg-accent text-accent-foreground px-3 py-1.5 editorial-shadow">
-            <p className="font-mono text-[10px] uppercase tracking-widest font-bold">LIVE — APR 2026</p>
+            <p className="font-mono text-[10px] uppercase tracking-widest font-bold">LIVE — MEI 2026</p>
           </div>
           <div className="absolute bottom-6 left-6 bg-background/90 border border-foreground/30 px-3 py-2">
             <p className="font-mono text-[9px] text-muted-foreground uppercase tracking-widest">
@@ -337,12 +337,12 @@ const Index = () => {
             </div>
             <div ref={prokerRef} className="grid grid-cols-2 gap-3">
               {[
-                { icon: Cat, val: "120+", label: "Kucing terlayani", detail: "di 5 area Bandung Selatan" },
-                { icon: Users, val: "38", label: "Relawan aktif", detail: "dari berbagai komunitas" },
+                { icon: Cat, val: "72+", label: "Kucing terlayani", detail: "di 5 area Bandung Selatan" },
+                { icon: Users, val: "14", label: "Donatur aktif", detail: "total donasi Rp 317.000" },
                 { icon: Heart, val: "Rp 317rb", label: "Dana terkumpul", detail: "Apr–Mei 2026" },
                 { icon: Globe, val: "2", label: "Mitra institusi", detail: "Kampus & komunitas lokal" },
-                { icon: Shield, val: "5", label: "Kucing diadopsi", detail: "Program Open Adopt" },
-                { icon: TrendingUp, val: "98kg", label: "Pakan distribusi", detail: "Maret 2026" },
+                { icon: Shield, val: "8", label: "Kucing open adopt", detail: "Program Open Adopt" },
+                { icon: TrendingUp, val: "9", label: "Sektor aktif", detail: "Mei 2026" },
               ].map((item, i) => (
                 <div
                   key={i}
@@ -477,13 +477,13 @@ const Index = () => {
           </div>
           <div className="p-8 md:p-16 border-t-2 md:border-t-0 border-foreground">
             <span className="font-mono text-xs mb-6 block uppercase tracking-widest text-muted-foreground">
-              [ Statistik Apr 2026 ]
+              [ Statistik Mei 2026 ]
             </span>
             <div className="grid grid-cols-2 gap-3 mb-12">
               {[
-                { val: "120+", label: "Kucing terlayani" },
-                { val: "12", label: "Titik feeding aktif" },
-                { val: "38", label: "Relawan bergabung" },
+                { val: "72+", label: "Kucing terlayani" },
+                { val: "9", label: "Sektor aktif" },
+                { val: "14", label: "Donatur bergabung" },
                 { val: "Rp 317rb", label: "Dana terkumpul" },
               ].map((stat) => (
                 <div
@@ -678,19 +678,19 @@ const Index = () => {
           <div className="space-y-2">
             {[
               {
-                date: "28 APR 2026",
-                title: "Jadwal Feeding Minggu Terakhir April 2026",
-                desc: "Feeding dilaksanakan Senin–Jumat pukul 07:00 dan 17:00 WIB di seluruh titik aktif.",
+                date: "18 MEI 2026",
+                title: "Laporan Feeding 18 Mei — 68 Kucing Terlayani di Semua Sektor",
+                desc: "Feeding rutin hari ini berjalan lancar. Tim MeongSquad hadir lengkap, ±8kg pakan terdistribusi.",
                 urgent: true,
               },
               {
-                date: "22 APR 2026",
-                title: "Rekap Kegiatan Hari Bumi — 120 Kucing Terlayani",
-                desc: "Terima kasih kepada 45 relawan yang hadir! Total pakan terdistribusi: 38kg.",
+                date: "13 MEI 2026",
+                title: "Laporan Feeding 13 Mei — 72 Kucing Terlayani",
+                desc: "Seluruh relawan hadir tepat waktu, semua titik aktif terlayani dengan baik.",
                 urgent: false,
               },
               {
-                date: "15 APR 2026",
+                date: "20 APR 2026",
                 title: "Pembukaan Relawan Batch 3 — Pendaftaran Dibuka",
                 desc: "Kuota terbatas untuk 20 relawan baru. Daftarkan diri melalui forum atau Instagram.",
                 urgent: false,

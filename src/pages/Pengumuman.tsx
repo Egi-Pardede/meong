@@ -14,28 +14,28 @@ interface Announcement {
 
 const announcements: Announcement[] = [
   {
+    date: "18 MEI 2026",
+    title: "Laporan Feeding 18 Mei 2026 — Semua Titik Terlayani",
+    content:
+      "Kegiatan feeding rutin Senin 18 Mei 2026 berjalan lancar di seluruh 9 sektor aktif. Relawan MeongSquad hadir lengkap dan tepat waktu. Total kucing terlayani hari ini: 68 ekor. Kondisi umum kucing di semua titik baik, tidak ada yang terlihat sakit. Pakan terdistribusi sebanyak ±8kg. Terima kasih untuk semua yang sudah berkontribusi!",
+    priority: "urgent",
+    location: "Semua Sektor",
+  },
+  {
     date: "13 MEI 2026",
     title: "Laporan Feeding 13 Mei 2026 — Berjalan Lancar di 5 Titik",
     content:
-      "Kegiatan feeding rutin hari ini, Selasa 13 Mei 2026, telah berhasil dilaksanakan di seluruh titik aktif. Relawan hadir tepat waktu di semua sektor. Total kucing yang terlayani hari ini mencapai 72 ekor. Kondisi kucing di semua titik terpantau sehat. Terima kasih kepada seluruh relawan yang hadir dan para donatur yang membuat kegiatan ini terus bisa berjalan!",
-    priority: "urgent",
-    location: "Semua Sektor",
-  },
-  {
-    date: "28 APR 2026",
-    title: "Jadwal Feeding Minggu Ini — 28 Apr s.d. 2 Mei 2026",
-    content:
-      "Feeding rutin dilaksanakan Senin s.d. Jumat pukul 07:00 dan 17:00 WIB di seluruh 12 titik feeding aktif. Relawan harap hadir 10 menit sebelum jadwal. Bawa pakan sendiri minimal 500g atau koordinasi dengan koordinator titik masing-masing.",
-    priority: "urgent",
-    location: "Semua Sektor",
-  },
-  {
-    date: "25 APR 2026",
-    title: "Rekap Kegiatan Hari Bumi 22 April 2026",
-    content:
-      "Alhamdulillah, kegiatan feeding massal memperingati Hari Bumi berjalan lancar! Total kucing terlayani: 120 ekor. Relawan hadir: 45 orang. Pakan terdistribusi: 38kg. Lokasi: 5 titik serentak (Sektor 1, 3, 5, 7, dan 9). Terima kasih kepada seluruh donatur dan relawan yang telah berpartisipasi.",
+      "Kegiatan feeding rutin Selasa 13 Mei 2026 telah berhasil dilaksanakan di seluruh titik aktif. Relawan hadir tepat waktu di semua sektor. Total kucing yang terlayani hari ini mencapai 72 ekor. Kondisi kucing di semua titik terpantau sehat. Terima kasih kepada seluruh relawan dan donatur yang membuat kegiatan ini terus bisa berjalan!",
     priority: "normal",
-    location: "Telkom University, Ciganitri, PGA",
+    location: "Semua Sektor",
+  },
+  {
+    date: "05 MEI 2026",
+    title: "Jadwal Feeding Minggu Pertama Mei 2026",
+    content:
+      "Feeding rutin Mei 2026 dilaksanakan sesuai jadwal normal: Senin s.d. Jumat pukul 07:00 dan 17:00 WIB di seluruh titik aktif. Untuk Sektor 3, 7, dan 12 jadwal menyesuaikan hari operasional (lihat tab Jadwal). Relawan harap koordinasi via grup WhatsApp MeongSquad sebelum keberangkatan.",
+    priority: "urgent",
+    location: "Semua Sektor",
   },
   {
     date: "20 APR 2026",
@@ -53,38 +53,38 @@ const announcements: Announcement[] = [
   },
   {
     date: "10 APR 2026",
-    title: "Target Donasi April 2026 Tercapai 120%",
+    title: "Donasi Mulai Mengalir — Program MEONG Resmi Berjalan",
     content:
-      "Kami sangat bersyukur! Target donasi bulan April (Rp 5.000.000) tercapai 120% hanya dalam 10 hari pertama. Dana akan digunakan untuk: pembelian pakan bulk (60%), biaya vaksinasi (25%), dan operasional website (15%). Laporan lengkap penggunaan dana dapat dilihat di halaman Donasi.",
+      "Sejak program MEONG Project diluncurkan, donasi mulai masuk dari berbagai pihak. Total donasi yang masuk di bulan April 2026: Rp 147.000 dari 13 donatur. Dana seluruhnya digunakan untuk pembelian pakan (60%), kebutuhan operasional (25%), dan pengembangan program (15%). Laporan lengkap dapat dilihat di halaman Donasi. Terima kasih atas kepercayaan semua pihak!",
     priority: "info",
   },
   {
     date: "05 APR 2026",
     title: "Penambahan 2 Titik Feeding Baru — Sukabirus",
     content:
-      "Berdasarkan hasil mapping bulan Maret 2026, ditemukan konsentrasi kucing jalanan di 2 area baru: Sektor 11 (Jl. Cihampelas area selatan) dan Sektor 12 (Taman Lansia) di kawasan Sukabirus. Kedua titik resmi dibuka mulai 5 April 2026. Dibutuhkan guardian/relawan tetap untuk mengadopsi titik-titik baru ini.",
+      "Berdasarkan hasil mapping bulan Maret 2026, ditemukan konsentrasi kucing jalanan di 2 area baru: Sektor 11 (Jl. Cihampelas area selatan) dan Sektor 12 (Taman Lansia) di kawasan Sukabirus. Kedua titik resmi dibuka mulai 5 April 2026 dan kini sudah ditangani oleh tim MeongSquad.",
     priority: "normal",
     location: "Sukabirus",
   },
   {
     date: "01 APR 2026",
-    title: "Laporan Bulanan Maret 2026",
+    title: "Laporan Bulanan Maret 2026 — Bulan Perdana Program",
     content:
-      "Ringkasan kegiatan Maret 2026: Total pakan terdistribusi 98kg. Kucing terlayani aktif: 120+ ekor. Titik feeding aktif: 10 lokasi. Donasi terkumpul: Rp 4.250.000. Relawan aktif: 32 orang. Kucing berhasil diadopsi melalui program Open Adopt: 5 ekor. Terima kasih atas kepercayaan semua pihak.",
+      "Ringkasan kegiatan Maret 2026 sebagai bulan perdana MEONG Project: Titik feeding aktif: 7 lokasi (awal). Kucing terlayani rutin: ±45 ekor. Pakan terdistribusi: ±18kg. Relawan yang bergabung: 6 orang. Program baru dimulai, sistem koordinasi dan pembagian tugas sedang dibangun. Terima kasih atas kepercayaan dan dukungan awal dari semua pihak yang percaya pada inisiatif ini.",
     priority: "info",
   },
 ];
 
 const feedingSchedule = [
-  { sector: "Sektor 1", location: "Depan Gedung Rektorat", area: "Telkom University", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 8, guardian: "Ayu W." },
-  { sector: "Sektor 2", location: "Kantin Utara", area: "Telkom University", days: "Sen–Jum", time: "07:00 & 17:00", cats: 12, guardian: "Tim Alpha" },
-  { sector: "Sektor 3", location: "Taman Samping Lab", area: "Telkom University", days: "Sel, Kam, Sab", time: "07:30 & 17:30", cats: 6, guardian: "Budi R." },
-  { sector: "Sektor 4", location: "Jl. Sukapura", area: "Sukapura", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 8, guardian: "SukapuraTeam" },
-  { sector: "Sektor 5", location: "Perumahan Ciganitri", area: "Ciganitri", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 9, guardian: "MeongSquad" },
-  { sector: "Sektor 7", location: "Area Kos-kosan PGA", area: "PGA", days: "Sel, Kam", time: "08:00 & 18:00", cats: 5, guardian: "Sinta D." },
-  { sector: "Sektor 9", location: "Parkiran Belakang", area: "Telkom University", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 7, guardian: "DrVetCat" },
-  { sector: "Sektor 11", location: "Jl. Cihampelas Selatan", area: "Sukabirus", days: "Sen–Jum", time: "07:00 & 17:00", cats: 10, guardian: "DIBUTUHKAN" },
-  { sector: "Sektor 12", location: "Taman Lansia Sukabirus", area: "Sukabirus", days: "Sen, Rab, Sab", time: "07:30 & 17:30", cats: 7, guardian: "DIBUTUHKAN" },
+  { sector: "Sektor 1",  location: "Depan Gedung Rektorat",   area: "Telkom University", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 8,  guardian: "MeongSquad" },
+  { sector: "Sektor 2",  location: "Kantin Utara",             area: "Telkom University", days: "Sen–Jum",       time: "07:00 & 17:00", cats: 12, guardian: "MeongSquad" },
+  { sector: "Sektor 3",  location: "Taman Samping Lab",        area: "Telkom University", days: "Sel, Kam, Sab", time: "07:30 & 17:30", cats: 6,  guardian: "MeongSquad" },
+  { sector: "Sektor 4",  location: "Jl. Sukapura",             area: "Sukapura",          days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 8,  guardian: "MeongSquad" },
+  { sector: "Sektor 5",  location: "Perumahan Ciganitri",      area: "Ciganitri",         days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 9,  guardian: "MeongSquad" },
+  { sector: "Sektor 7",  location: "Area Kos-kosan PGA",       area: "PGA",               days: "Sel, Kam",      time: "08:00 & 18:00", cats: 5,  guardian: "MeongSquad" },
+  { sector: "Sektor 9",  location: "Parkiran Belakang",        area: "Telkom University", days: "Sen, Rab, Jum", time: "07:00 & 17:00", cats: 7,  guardian: "MeongSquad" },
+  { sector: "Sektor 11", location: "Jl. Cihampelas Selatan",  area: "Sukabirus",         days: "Sen–Jum",       time: "07:00 & 17:00", cats: 10, guardian: "MeongSquad" },
+  { sector: "Sektor 12", location: "Taman Lansia Sukabirus",  area: "Sukabirus",         days: "Sen, Rab, Sab", time: "07:30 & 17:30", cats: 7,  guardian: "MeongSquad" },
 ];
 
 const priorityStyles = {
@@ -253,9 +253,7 @@ const Pengumuman = () => {
                   {feedingSchedule.map((row, i) => (
                     <tr
                       key={i}
-                      className={`border-b border-foreground/20 hover:bg-muted/30 transition-colors ${
-                        row.guardian === "DIBUTUHKAN" ? "bg-accent/5" : ""
-                      }`}
+                      className="border-b border-foreground/20 hover:bg-muted/30 transition-colors"
                     >
                       <td className="p-4 font-bold">{row.sector}</td>
                       <td className="p-4">
@@ -272,15 +270,9 @@ const Pengumuman = () => {
                         </span>
                       </td>
                       <td className="p-4">
-                        {row.guardian === "DIBUTUHKAN" ? (
-                          <span className="text-[10px] font-bold uppercase tracking-widest bg-accent text-accent-foreground px-2 py-1 animate-pulse">
-                            DIBUTUHKAN
-                          </span>
-                        ) : (
-                          <span className="text-[10px] font-bold uppercase tracking-widest text-accent">
-                            @{row.guardian}
-                          </span>
-                        )}
+                        <span className="text-[10px] font-bold uppercase tracking-widest text-accent">
+                          @{row.guardian}
+                        </span>
                       </td>
                     </tr>
                   ))}
@@ -288,27 +280,19 @@ const Pengumuman = () => {
               </table>
             </div>
 
-            <div className="mt-8 border border-accent/40 bg-accent/5 p-6">
-              <h4 className="font-bold uppercase text-sm mb-2 text-accent flex items-center gap-2">
-                <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
-                Relawan Dibutuhkan di Sukabirus!
+            <div className="mt-8 border border-foreground/20 bg-muted/20 p-6">
+              <h4 className="font-bold uppercase text-sm mb-2 flex items-center gap-2">
+                <span className="w-2 h-2 bg-accent rounded-full" />
+                Semua Sektor Sudah Memiliki Guardian
               </h4>
               <p className="text-sm text-muted-foreground">
-                Sektor 11 & 12 (Sukabirus) membutuhkan guardian tetap. Komitmen minimal 3x/minggu.
-                Hubungi kami via Instagram{" "}
-                <a
-                  href="https://instagram.com/meong.project"
-                  className="text-accent hover:underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                Seluruh 9 sektor feeding kini sudah ditangani oleh tim <span className="font-bold text-foreground">@MeongSquad</span>.
+                Ingin bergabung sebagai relawan? Hubungi kami via Instagram{" "}
+                <a href="https://instagram.com/meong.project" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">
                   @meong.project
                 </a>{" "}
-                atau post di{" "}
-                <a href="/forum" className="text-accent hover:underline">
-                  Forum
-                </a>
-                .
+                atau daftarkan diri di{" "}
+                <a href="/forum" className="text-accent hover:underline">Forum</a>.
               </p>
             </div>
           </div>
